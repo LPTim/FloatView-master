@@ -35,6 +35,7 @@ class FloatUI : BaseUI() {
             .into(mIvLogo!!)
 
         ObjectAnimator.ofFloat(mIvLogo, "rotation", 0f, 360f).apply {
+            duration = 15000
             repeatMode = ValueAnimator.RESTART
             repeatCount = ValueAnimator.INFINITE
             interpolator = LinearInterpolator()
