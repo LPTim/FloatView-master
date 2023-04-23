@@ -1,0 +1,16 @@
+package com.loocan.floatview_master
+
+import android.app.Application
+
+
+class App : Application() {
+
+    override fun onCreate() {
+        super.onCreate()
+        instance = this
+    }
+
+    companion object {
+        lateinit var instance: Application
+    }
+}
